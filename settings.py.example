@@ -1,0 +1,16 @@
+# Twitter API keys
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_TOKEN_KEY = ''
+ACCESS_TOKEN_SECRET = ''
+
+# How many times do we need to get a user's timeline of 200 tweets?
+# 1 * 200 = 200 tweets
+# 16 * 200 = 3200 tweets (maximum)
+ITERATE_TIMES = 16
+
+# Path to font to be used for the PDF template
+# (required to make cyrillic tweets display correctly)
+FONT_PATH = '/Library/Fonts/Arial.ttf'
+
+TWITTER_USERNAME = 'vslnks'

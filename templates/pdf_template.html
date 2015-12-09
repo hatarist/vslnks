@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+      @font-face {
+        font-family: Arial;
+        src: url('{{ font_path }}');
+      }
+
+      p {
+        font-family: arial;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <h1>Famous last tweets</h1>
+      <h2>of @{{ username }}</h2>
+    </center>
+    {% for tweet in tweets %}
+      <h4>{{ tweet.created_at }}</h4>
+      <p>{{ tweet.text }}</p>
+    {% endfor %}
+    </body>
+  </body>
+</html>
